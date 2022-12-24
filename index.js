@@ -19,6 +19,10 @@ app.set('view engine', 'hbs');
 //routes
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+app.get('/:page', (req, res) =>{
+    res.render(req.params.page);
 })
 //khoi dong web server
 app.listen( port, () =>{
