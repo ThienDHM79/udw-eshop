@@ -7,6 +7,18 @@ body {
     font-weight: 400;
     background: #ffffff;
 }
+/* student customize text size */
+p{
+    font-size: 10px;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom : 0px;
+    padding: 0;
+    border: 0;
+}
+
+/* customize end */
 
 a {
     color: #3F69AA;
@@ -166,12 +178,12 @@ button.btn {
 
 .top-header .user .cart i {
     color: #3F69AA;
-    font-size: 18px;
+    font-size: 9px;
 }
 
 .top-header .user .cart span {
     color: #666666;
-    font-size: 14px;
+    font-size: 7px;
 }
 
 @media (min-width: 768px) {
@@ -226,7 +238,7 @@ button.btn {
     
     .header a.nav-link {
         padding: 8px 15px;
-        font-size: 15px;
+        font-size: 7px;
         text-transform: uppercase;
     }
 }
@@ -290,7 +302,7 @@ button.btn {
 .slick-prev::before,
 .slick-next::before {
     font-family: "FontAwesome";
-    font-size: 30px;
+    font-size: 7px;
     color: #3F69AA;
 }
 
@@ -405,7 +417,7 @@ button.btn {
     width: 100%;
     text-align: center;
     color: #ffffff;
-    font-size: 35px;
+    font-size: 17px;
     font-weight: 700;
     transition: .5s;
 }
@@ -429,7 +441,7 @@ button.btn {
 .section-header h3 {
     position: relative;
     color: #3F69AA;
-    font-size: 35px;
+    font-size: 9px;
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
@@ -448,7 +460,7 @@ button.btn {
 }
 
 .section-header p {
-    font-size: 16px;
+    font-size: 8px;
     text-align: center;
     margin: 0
 }
@@ -482,13 +494,13 @@ button.btn {
 
 .feature .feature-content i {
     color: #3F69AA;
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .feature .feature-content h2 {
     color: #666666;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
 }
 
@@ -592,17 +604,17 @@ button.btn {
 
 .product-item .product-content .title a {
     color: #3F69AA;
-    font-size: 18px;
+    font-size: 9px;
     font-weight: 600;
 }
 
 .product-item .product-content .ratting i {
-    font-size: 14px;
+    font-size: 7px;
     color: #3F69AA;
 }
 
 .product-item .product-content .price {
-    font-size: 30px;
+    font-size: 15px;
     color: #3F69AA;
     font-weight: 700; 
 }
@@ -676,7 +688,7 @@ button.btn {
 }
 
 .product-view .product-search button i {
-    font-size: 16px;
+    font-size: 8px;
 }
 
 .product-view .product-search button:hover {
@@ -767,19 +779,19 @@ button.btn {
 
 .product-detail .product-content .title h2 {
     color: #3F69AA;
-    font-size: 25px;
+    font-size: 12px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .product-detail .product-content .ratting i {
     color: #3F69AA;
-    font-size: 18px;
+    font-size: 9px;
 }
 
 .product-detail .product-content .price {
     color: #3F69AA;
-    font-size: 25px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -796,7 +808,7 @@ button.btn {
 
 .product-detail .product-content .details p {
     color: #666666;
-    font-size: 16px;
+    font-size: 8px;
 }
 
 .product-detail .product-content .quantity {
@@ -806,7 +818,7 @@ button.btn {
 .product-detail .product-content .quantity h4 {
     display: inline-block;
     color: #666666;
-    font-size: 18px;
+    font-size: 9px;
     font-weight: 600;
     margin-right: 5px;
 }
@@ -841,7 +853,7 @@ button.btn {
     padding: 7px 0;
     text-align: center;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 11px;
     background: #3F69AA;
     border: 1px solid #3F69AA;
 }
@@ -894,13 +906,13 @@ button.btn {
 
 .product-detail .tab-content .reviewer {
     color: #3F69AA;
-    font-size: 18px;
+    font-size: 9px;
     font-weight: 600;
 }
 
 .product-detail .tab-content .reviewer span {
     color: #666666;
-    font-size: 14px;
+    font-size: 9px;
     font-weight: 400;
 }
 
@@ -910,7 +922,7 @@ button.btn {
 }
 
 .product-detail .tab-content .reviews-submit .ratting {
-    font-size: 24px;
+    font-size: 12px;
 }
 
 .product-detail .tab-content .form input {
@@ -966,7 +978,7 @@ button.btn {
 .sidebar-widget .title {
     position: relative;
     color: #3F69AA;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 600;
     text-align: center;
     text-transform: capitalize;
@@ -993,7 +1005,7 @@ button.btn {
 
 .sidebar-widget.brands ul li,
 .sidebar-widget.category ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 2px; 
 }
 
 .sidebar-widget.brands ul li:last-child,
@@ -1004,7 +1016,7 @@ button.btn {
 .sidebar-widget.brands ul li a,
 .sidebar-widget.category ul li a {
     color: #3F69AA;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 400;
     white-space: nowrap;
     display: inline-block;
@@ -1028,7 +1040,7 @@ button.btn {
     display: inline-block;
     float: right;
     color: #666666;
-    font-size: 14px;
+    font-size: 7px;
     font-weight: 400;
 }
 
@@ -1053,7 +1065,7 @@ button.btn {
     display: inline-block;
     margin: 0 0 4px 0;
     padding: 3px 8px;
-    font-size: 14px;
+    font-size: 7px;
     font-weight: 400;
     color: #3F69AA;
     background: #ffffff;
@@ -1090,7 +1102,7 @@ button.btn {
 
 .cart-page .table td {
     color: #666666;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 600;
     vertical-align: middle;
 }
@@ -1159,13 +1171,13 @@ button.btn {
 
 .cart-page .cart-summary .cart-content h3 {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 .cart-page .cart-summary .cart-content p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 400;
 }
 
@@ -1176,7 +1188,7 @@ button.btn {
 
 .cart-page .cart-summary .cart-content h4 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 600;
     padding-top: 12px;
     border-top: 1px solid #ffffff;
@@ -1225,7 +1237,7 @@ button.btn {
 .checkout .billing-address h2,
 .checkout .shipping-address h2 {
     color: #666666;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -1242,7 +1254,7 @@ button.btn {
 .checkout .checkout-summary h2,
 .checkout .checkout-payment h2 {
     color: #666666;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -1254,13 +1266,13 @@ button.btn {
 
 .checkout .checkout-summary .checkout-content h3 {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 .checkout .checkout-summary .checkout-content p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 400;
 }
 
@@ -1277,7 +1289,7 @@ button.btn {
 
 .checkout .checkout-summary .checkout-content h4 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 600;
     padding-top: 12px;
     border-top: 1px solid #ffffff;
@@ -1348,7 +1360,7 @@ button.btn {
 
 .my-account .tab-content .table td {
     color: #666666;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 400;
     vertical-align: middle;
 }
@@ -1472,7 +1484,7 @@ button.btn {
 .contact .contact-info h4 {
     margin-bottom: 10px;
     color: #666666;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: 400;
 }
 
@@ -1493,7 +1505,7 @@ button.btn {
     height: 40px;
     padding: 3px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 10px;
     border: 1px solid #3F69AA;
 }
 
@@ -1522,7 +1534,7 @@ button.btn {
 .contact .form input,
 .contact .form textarea {
     color: #666666;
-    font-size: 16px;
+    font-size: 8px;
     padding: 10px 15px;
     border: none;
     border: 1px solid #3F69AA;
@@ -1586,7 +1598,8 @@ button.btn {
 
 .footer .footer-widget h1 {
     color: #ffffff;
-    margin-bottom: 18px; 
+    margin-bottom: 18px;
+    font-size: 9px;
 }
 
 .footer .footer-widget .title {
@@ -1605,7 +1618,8 @@ button.btn {
 }
 
 .footer .footer-widget ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 2px;
+    font-size: 10px;
 }
 
 .footer .footer-widget ul li:last-child {
@@ -1632,7 +1646,7 @@ button.btn {
 .footer .contact-info p {
     margin-bottom: 5px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 8px;
 }
 
 .footer .contact-info p i {
@@ -1652,7 +1666,7 @@ button.btn {
     height: 35px;
     padding: 2px 0;
     text-align: center;
-    font-size: 18px;
+    font-size: 9px;
     border: 1px solid #ffffff;
 }
 
@@ -1698,7 +1712,7 @@ button.btn {
     display: inline-block;
     margin: 0 10px 0 0;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 22px;
 }
