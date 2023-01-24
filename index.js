@@ -17,19 +17,7 @@ app.engine('hbs', expressHandlebars.engine({
 app.set('view engine', 'hbs');
 
 //routes
-app.get('/createTables', (req, res) => {
-    let models = require('./models');
-    models.sequelize.sync().then( () => {
-        res.send('table created');
-    })
-});
-app.get('/', (req, res) => {
-    res.render('index');
-});
-
-app.get('/:page', (req, res) =>{
-    res.render(req.params.page);
-})
+app.use('/', require('./routes/indexRouter'));
 //khoi dong web server
 app.listen( port, () =>{
     console.log(`server is running on port ${port}`);
