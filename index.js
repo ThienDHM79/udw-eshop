@@ -12,7 +12,10 @@ app.engine('hbs', expressHandlebars.engine({
     layoutsDir: __dirname + '/views/layouts',
     partialsDir:__dirname + '/views/partials',
     extname: 'hbs',
-    defaultLayout: 'layout'
+    defaultLayout: 'layout',
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true
+    }
 }));
 app.set('view engine', 'hbs');
 

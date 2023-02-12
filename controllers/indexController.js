@@ -1,9 +1,12 @@
 'use strict';
 
 const controller = {};
+const models = require('../models');
 
-controller.showHomepage = (req, res) => {
-    res.render('index');
+controller.showHomepage = async (req, res) => {
+    const Brand = models.Brand;
+    const brands = await Brand.findAll();
+    res.render('index', { brands });
 }
 
 controller.showPage = (req, res, next) =>{
