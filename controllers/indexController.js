@@ -4,6 +4,12 @@ const controller = {};
 const models = require('../models');
 
 controller.showHomepage = async (req, res) => {
+    const recentProducts = await models.Product.findAll({
+        attributes: ['id', 'name', 'imagePath', 'stars', 'price', 'oldPrice', 'createdAt'],
+        order: [['createdAt', 'DESC']],
+        limit: 10
+    });
+    res.locals.recentProducts = recentProducts;
     const featuredProducts = await models.Product.findAll( {
         attributes: ['id', 'name', 'imagePath', 'stars', 'price', 'oldPrice'],
         order: [['stars', 'DESC']],
