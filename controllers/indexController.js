@@ -29,6 +29,7 @@ controller.showHomepage = async (req, res) => {
 
     const Brand = models.Brand;
     const brands = await Brand.findAll();
+    console.log(brands);
     res.render('index', { brands });
 }
 
