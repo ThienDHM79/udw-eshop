@@ -22,7 +22,9 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="product-search">
-                                            <input type="email" value="Search">
+                                            <form action="/products" method="get">
+                                                <input type="text" placeholder="Search" name="keyword" required>
+                                            </form>
                                             <button><i class="fa fa-search"></i></button>
                                         </div>
                                     </div>
