@@ -52,6 +52,7 @@ app.use( (req, res, next) => {
 //routes
 app.use('/', require('./routes/indexRouter'));
 app.use('/products', require('./routes/productsRouter'));
+app.use('/users', require('./routes/usersRouter'))
 
 app.use( (req, res, next) => {
     res.status(404).render('error', {message: 'File not Found!'});
