@@ -5,6 +5,7 @@ specifiers:
   express-handlebars: ^6.0.6
   express-handlebars-paginate: ^1.0.3
   express-session: ^1.17.3
+  express-validator: ^7.0.1
   pg: ^8.8.0
   pg-hstore: ^2.3.4
   sequelize: ^6.28.0
@@ -14,6 +15,7 @@ dependencies:
   express-handlebars: 6.0.6
   express-handlebars-paginate: 1.0.3
   express-session: 1.17.3
+  express-validator: 7.0.1
   pg: 8.8.0
   pg-hstore: 2.3.4
   sequelize: 6.28.0_pg-hstore@2.3.4+pg@8.8.0
@@ -205,6 +207,14 @@ packages:
       uid-safe: 2.1.5
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /express-validator/7.0.1:
+    resolution: {integrity: sha512-oB+z9QOzQIE8FnlINqyIFA8eIckahC6qc8KtqLdLJcU3/phVyuhXH3bA4qzcrhme+1RYaCSwrq+TlZ/kAKIARA==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      lodash: 4.17.21
+      validator: 13.9.0
     dev: false
 
   /express/4.18.2:
@@ -799,6 +809,11 @@ packages:
 
   /validator/13.7.0:
     resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+    engines: {node: '>= 0.10'}
+    dev: false
+
+  /validator/13.9.0:
+    resolution: {integrity: sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA==}
     engines: {node: '>= 0.10'}
     dev: false
 
