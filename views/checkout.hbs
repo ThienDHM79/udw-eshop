@@ -12,6 +12,7 @@
         
         
         <!-- Checkout Start -->
+    <form action="/users/placeorders" method="post">
         <div class="checkout">
             <div class="container"> 
                 <div class="row">
@@ -23,7 +24,7 @@
                                 <div class="col-md-12">
                                     <div class="payment-method">
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="address-{{id}}" name="addressId" value="addressId" {{#if isDefault}}
+                                        <input type="radio" class="custom-control-input" id="address-{{id}}" name="addressId" value={{id}} {{#if isDefault}}
                                         checked{{/if}}>
                                         <label class="custom-control-label" for="address-{{id}}"><strong>{{firstName}} {{lastName}}</strong></label>
                                     </div>
@@ -40,7 +41,7 @@
                                 {{/each}}
                                 <div class="col-md-12">
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="shipto" name="addressId">
+                                        <input type="radio" class="custom-control-input" id="shipto" name="addressId" value="0">
                                         <label class="custom-control-label" for="shipto">Ship to different address</label>
                                     </div>
                                 </div>
@@ -52,27 +53,28 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>First Name</label>
-                                    <input class="form-control" type="text" placeholder="First Name">
+                                    <input class="form-control" type="text" placeholder="First Name" name="firstName">
                                 </div>
                                 <div class="col-md-6">
                                     <label>Last Name</label>
-                                    <input class="form-control" type="text" placeholder="Last Name">
+                                    <input class="form-control" type="text" placeholder="Last Name" name="lastName">
                                 </div>
                                 <div class="col-md-6">
                                     <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
+                                    <input class="form-control" type="text" placeholder="E-mail" name="email">
                                 </div>
                                 <div class="col-md-6">
                                     <label>Mobile No</label>
-                                    <input class="form-control" type="text" placeholder="Mobile No">
+                                    <input class="form-control" type="text" placeholder="Mobile No"
+                                        name="mobile">
                                 </div>
                                 <div class="col-md-12">
                                     <label>Address</label>
-                                    <input class="form-control" type="text" placeholder="Address">
+                                    <input class="form-control" type="text" placeholder="Address" name="address">
                                 </div>
                                 <div class="col-md-6">
                                     <label>Country</label>
-                                    <select class="custom-select">
+                                    <select class="custom-select" name="country">
                                         <option selected>United States</option>
                                         <option>Afghanistan</option>
                                         <option>Albania</option>
@@ -81,15 +83,15 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label>City</label>
-                                    <input class="form-control" type="text" placeholder="City">
+                                    <input class="form-control" type="text" placeholder="City" name="city">
                                 </div>
                                 <div class="col-md-6">
                                     <label>State</label>
-                                    <input class="form-control" type="text" placeholder="State">
+                                    <input class="form-control" type="text" placeholder="State" name="state">
                                 </div>
                                 <div class="col-md-6">
                                     <label>ZIP Code</label>
-                                    <input class="form-control" type="text" placeholder="ZIP Code">
+                                    <input class="form-control" type="text" placeholder="ZIP Code" name="zipCode">
                                 </div>
                             </div>
                         </div>
@@ -114,7 +116,7 @@
                             <div class="payment-methods">
                                 <div class="payment-method">
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-1" name="payment" value="Paypal">
+                                        <input type="radio" class="custom-control-input" id="payment-1" name="payment" value="PAYPAL">
                                         <label class="custom-control-label" for="payment-1">Paypal</label>
                                     </div>
                                     <div class="payment-content" id="payment-1-show">
@@ -143,5 +145,6 @@
                 </div>
             </div>
         </div>
+    </form>
         <!-- Checkout End -->
         
