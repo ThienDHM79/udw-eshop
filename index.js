@@ -9,6 +9,15 @@ const {createStarList} = require('./controllers/handlebarsHelper');
 //handlebar paginate
 const { createPagination } = require('express-handlebars-paginate');
 const session = require('express-session');
+//cau hinh redis
+const  redisStore = require('connect-redis').default;
+const { createClient } = require('redis');
+const redisClient = createClient({
+    // url:'rediss://red-chfgb6m7avjbbjs8q9v0:jBiG2kbJaxeET7P5OGIwoxGBHVcbLqm3@singapore-redis.render.com:6379'
+    url: 'redis://red-chfgb6m7avjbbjs8q9v0:6379'
+});
+redisClient.connect().catch(console.error);
+
 //cau hinh public static folder
 app.use( express.static(__dirname+ '/public'));
 
@@ -33,6 +42,7 @@ app.use(express.urlencoded( { extended: false }));
 //cau hinh su dung session
 app.use( session({
     secret: 'S3cret',
+    store: new redisStore({ client: redisClient}),
     resave: false,
     saveUninitialized: false,
     cookie: {
